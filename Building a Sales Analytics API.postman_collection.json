@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "9e35367b-0273-43c6-8c2c-af4bdfa9eb85",
+		"name": "Building a Sales Analytics API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21752380"
+	},
+	"item": [
+		{
+			"name": "Total Revenue",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Quantity By Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/quantity-by-product",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"quantity-by-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/top-product",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"top-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Average Price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/average-price",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"average-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Revenue By Month And Year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/revenue-by-month-and-year",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"revenue-by-month-and-year"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Highest Quantity Sold",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/highest-quantity-sold",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"highest-quantity-sold"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Department Salary Expense",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/department-salary-expense",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"department-salary-expense"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "http://localhost:5000/api/v1",
+			"type": "string"
+		}
+	]
+}

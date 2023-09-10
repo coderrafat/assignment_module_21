@@ -75,7 +75,7 @@ exports.AveragePrice = async () => {
     try {
 
         //!average price of products sold
-        const result = await Sales.aggregate([
+        const result = await SaleModel.aggregate([
             {
                 $group: {
                     _id: null,
@@ -107,7 +107,7 @@ exports.AveragePrice = async () => {
 //!Revenue By Month And Year
 exports.RevenueByMonthAndYear = async () => {
     try {
-        const result = await Sales.aggregate([
+        const result = await SaleModel.aggregate([
             {
                 $group: {
                     _id: {
@@ -140,7 +140,7 @@ exports.RevenueByMonthAndYear = async () => {
 //!Highest Quantity Sold
 exports.HighestQuantitySold = async () => {
     try {
-        const result = await Sales.aggregate([
+        const result = await SaleModel.aggregate([
             {
                 $group: {
                     _id: '$date',
@@ -186,7 +186,7 @@ exports.HighestQuantitySold = async () => {
 //!Department Salary Expense
 exports.DepartmentSalaryExpense = async () => {
     try {
-        const result = await Sales.aggregate([
+        const result = await SaleModel.aggregate([
             {
                 $group: {
                     _id: '$department', // Assuming department information is present in the sales documents
